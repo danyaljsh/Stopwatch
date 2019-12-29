@@ -7,19 +7,48 @@
   android:background="#211d44"
   tools:context=".MainActivity">
 
+
+  <Chronometer
+    android:id="@+id/timerhere"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#fff"
+    android:textSize="62sp"
+    app:layout_constraintBottom_toTopOf="@+id/guideline6"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline2"
+    />
+
   <Button
     android:id="@+id/btnstart"
     android:layout_width="280dp"
     android:layout_height="55dp"
+    android:layout_marginTop="16dp"
     android:background="@drawable/btnget_bg"
     android:text="start now"
     android:textAllCaps="true"
     android:textColor="#fff"
     android:textSize="20sp"
-    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+  <Button
+    android:id="@+id/btnstop"
+    android:layout_width="280dp"
+    android:layout_height="55dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/btn_stop"
+    android:text="Finish Workout"
+    android:textAllCaps="true"
+    android:textColor="#fff"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnstart" />
+
+
 
   <ImageView
     android:id="@+id/ivcircle"
@@ -39,7 +68,8 @@
     app:layout_constraintBottom_toTopOf="@+id/guideline2"
     app:layout_constraintEnd_toStartOf="@+id/guideline4"
     app:layout_constraintStart_toStartOf="@+id/guideline"
-    app:layout_constraintTop_toTopOf="@+id/guideline5" />
+    app:layout_constraintTop_toTopOf="@+id/guideline5"
+    android:rotationY="180"/>
   <android.support.constraint.Guideline
     android:id="@+id/guideline"
     android:layout_width="wrap_content"
