@@ -1,2 +1,2 @@
 # Stopwatch
-![stopWatch](demo/stopwatch.gif)
+![stopWatch](demo/Stopwatch.gif)
